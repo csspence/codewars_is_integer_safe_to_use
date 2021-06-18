@@ -6,5 +6,6 @@ SafeInteger(-90) //true
 SafeInteger(9007199254740992) //false
 */
 
-function SafeInteger(n) {
+const SafeInteger = (n) => {
+  return Number.isSafeInteger(n);
 }
